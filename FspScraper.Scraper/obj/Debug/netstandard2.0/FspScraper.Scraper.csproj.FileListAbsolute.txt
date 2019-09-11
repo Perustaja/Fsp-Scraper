@@ -1,0 +1,12 @@
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/bin/Debug/netstandard2.0/FspScraper.Scraper.deps.json
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/bin/Debug/netstandard2.0/FspScraper.Scraper.dll
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/bin/Debug/netstandard2.0/FspScraper.Scraper.pdb
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/bin/Debug/netstandard2.0/FspScraper.Common.dll
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/bin/Debug/netstandard2.0/FspScraper.Common.pdb
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.csprojAssemblyReference.cache
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.csproj.CoreCompileInputs.cache
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.AssemblyInfoInputs.cache
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.AssemblyInfo.cs
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.csproj.CopyComplete
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.dll
+/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/obj/Debug/netstandard2.0/FspScraper.Scraper.pdb
