@@ -37,6 +37,7 @@ namespace FspScraper.WebAPI
             services.AddDbContext<FspTimesContext>(options => options.UseSqlite(
                 Configuration.GetConnectionString("FspTimesContext"),
                 assembly => assembly.MigrationsAssembly("FspScraper.WebAPI")));
+            // NOTE: The Hangfire connection string ends with a ;. This is because of the SQLite extension checking for one. 
             services.AddHangfire(config => config.UseSQLiteStorage(Configuration.GetConnectionString("HangfireConnection")));
             services.AddScoped<ITimesRepository, TimesRepository>();
             services.AddScoped<ITimesScraperJob, TimesScraperJob>();
