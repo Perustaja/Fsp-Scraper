@@ -25,7 +25,6 @@
       "FspScraper.WebAPI/1.0.0": {
         "dependencies": {
           "FspScraper.Common": "1.0.0",
-          "FspScraper.Parser": "1.0.0",
           "FspScraper.Scraper": "1.0.0",
           "Hangfire.AspNetCore": "1.7.6",
           "Hangfire.Core": "1.7.6",
@@ -4433,17 +4432,6 @@
           "FspScraper.Common.dll": {}
         }
       },
-      "FspScraper.Parser/1.0.0": {
-        "dependencies": {
-          "FspScraper.Common": "1.0.0"
-        },
-        "runtime": {
-          "FspScraper.Parser.dll": {}
-        },
-        "compile": {
-          "FspScraper.Parser.dll": {}
-        }
-      },
       "FspScraper.Scraper/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
@@ -6729,11 +6717,6 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "FspScraper.Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "FspScraper.Parser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,10 +4,8 @@
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.WebAPI.dll
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.WebAPI.pdb
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Common.dll
-/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Parser.dll
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Scraper.dll
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Scraper.pdb
-/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Parser.pdb
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/bin/Debug/netcoreapp2.2/FspScraper.Common.pdb
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/obj/Debug/netcoreapp2.2/FspScraper.WebAPI.csprojAssemblyReference.cache
 /home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/obj/Debug/netcoreapp2.2/FspScraper.WebAPI.csproj.CoreCompileInputs.cache

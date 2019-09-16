@@ -4797,19 +4797,6 @@
           "bin/placeholder/FspScraper.Common.dll": {}
         }
       },
-      "FspScraper.Parser/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "FspScraper.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/FspScraper.Parser.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FspScraper.Parser.dll": {}
-        }
-      },
       "FspScraper.Scraper/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -13079,11 +13066,6 @@
       "path": "../FspScraper.Common/FspScraper.Common.csproj",
       "msbuildProject": "../FspScraper.Common/FspScraper.Common.csproj"
     },
-    "FspScraper.Parser/1.0.0": {
-      "type": "project",
-      "path": "../FspScraper.Parser/FspScraper.Parser.csproj",
-      "msbuildProject": "../FspScraper.Parser/FspScraper.Parser.csproj"
-    },
     "FspScraper.Scraper/1.0.0": {
       "type": "project",
       "path": "../FspScraper.Scraper/FspScraper.Scraper.csproj",
@@ -13093,7 +13075,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "FspScraper.Common >= 1.0.0",
-      "FspScraper.Parser >= 1.0.0",
       "FspScraper.Scraper >= 1.0.0",
       "Hangfire.AspNetCore >= 1.7.6",
       "Hangfire.Core >= 1.7.6",
@@ -13135,9 +13116,6 @@
           "projectReferences": {
             "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj": {
               "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj"
-            },
-            "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Parser/FspScraper.Parser.csproj": {
-              "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Parser/FspScraper.Parser.csproj"
             },
             "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj": {
               "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj"

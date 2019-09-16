@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FspScraper.Scraper\FspScraper.Scraper.csproj" />
-    <ProjectReference Include="..\FspScraper.Parser\FspScraper.Parser.csproj" />
     <ProjectReference Include="..\FspScraper.Common\FspScraper.Common.csproj" />
   </ItemGroup>
 
