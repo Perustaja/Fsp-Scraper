@@ -16,6 +16,9 @@ using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using FspScraper.WebAPI.Services;
+using Hangfire;
+using Hangfire.SQLite;
+using FspScraper.WebAPI.Jobs;
 
 namespace FspScraper.WebAPI
 {
@@ -34,8 +37,9 @@ namespace FspScraper.WebAPI
             services.AddDbContext<FspTimesContext>(options => options.UseSqlite(
                 Configuration.GetConnectionString("FspTimesContext"),
                 assembly => assembly.MigrationsAssembly("FspScraper.WebAPI")));
+            services.AddHangfire(config => config.UseSQLiteStorage(Configuration.GetConnectionString("HangfireConnection")));
             services.AddScoped<ITimesRepository, TimesRepository>();
-            services.AddSingleton<FspTimesScraper>();
+            services.AddScoped<ITimesScraperJob, TimesScraperJob>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -51,9 +55,15 @@ namespace FspScraper.WebAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 // app.UseHsts();
             }
+            app.UseHangfireServer(new BackgroundJobServerOptions
+            {
+                WorkerCount = 1
+            });
 
             // app.UseHttpsRedirection();
             app.UseMvc();
+            GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute {Attempts = 0});
+            HangfireScheduler.ScheduleRecurringJobs();
         }
     }
 }

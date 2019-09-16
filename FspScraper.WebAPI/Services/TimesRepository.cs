@@ -29,7 +29,7 @@ namespace FspScraper.WebAPI.Services
         {
             _logger.LogInformation($"Attempting to get times for: {registrationNum}");
             var times = _timesContext.Times.
-                        Where(a => a.RegistrationNum == registrationNum);
+                            Where(a => a.RegistrationNum == registrationNum);
             return await times.FirstOrDefaultAsync();
         }
     }

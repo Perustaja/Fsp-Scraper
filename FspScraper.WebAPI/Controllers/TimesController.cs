@@ -14,10 +14,17 @@ namespace FspScraper.WebAPI.Controllers
         {
             _timesRepository = repo;
         }
+        // GET api/times
         [HttpGet]
         public async Task<ActionResult<FspTimes[]>> Get()
         {
             return await _timesRepository.GetTimes();
+        }
+        // GET /api/times/regNum
+        [HttpGet("{regNum}")]
+        public async Task<ActionResult<FspTimes>> Get(string regNum)
+        {
+            return await _timesRepository.GetTimesByReg(regNum);
         }
     }
 }
