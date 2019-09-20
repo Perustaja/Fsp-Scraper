@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using FspScraper.Common.Models.Contexts;
 using FspScraper.Scraper;
@@ -26,7 +27,13 @@ namespace FspScraper.WebAPI.Jobs
             _logger.LogInformation($"{DateTime.Now}: Attempting to start scraping background service.");
             var scraper = new FspTimesScraper();
             var times = scraper.Run();
-            _timesContext.UpdateRange(times);
+            foreach (var set in times)
+            {
+                if (_timesContext.Times.Any(e => e.RegistrationNum == set.RegistrationNum))
+                    _timesContext.Update(set);
+                else 
+                    _timesContext.Add(set);
+            }
             await _timesContext.SaveChangesAsync();
             _logger.LogInformation($"{DateTime.Now}: Scraping service finished.");
         }
