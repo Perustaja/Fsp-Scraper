@@ -13093,11 +13093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/FspScraper.WebAPI.csproj",
+      "projectUniqueName": "/home/perustaja/Dev/Fsp-Scraper/FspScraper.WebAPI/FspScraper.WebAPI.csproj",
       "projectName": "FspScraper.WebAPI",
-      "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/FspScraper.WebAPI.csproj",
+      "projectPath": "/home/perustaja/Dev/Fsp-Scraper/FspScraper.WebAPI/FspScraper.WebAPI.csproj",
       "packagesPath": "/home/perustaja/.nuget/packages/",
-      "outputPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.WebAPI/obj/",
+      "outputPath": "/home/perustaja/Dev/Fsp-Scraper/FspScraper.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/opt/dotnet/sdk/NuGetFallbackFolder"
@@ -13114,11 +13114,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj": {
-              "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj"
+            "/home/perustaja/Dev/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj": {
+              "projectPath": "/home/perustaja/Dev/Fsp-Scraper/FspScraper.Common/FspScraper.Common.csproj"
             },
-            "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj": {
-              "projectPath": "/home/perustaja/Documents/Dotnet/cs/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj"
+            "/home/perustaja/Dev/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj": {
+              "projectPath": "/home/perustaja/Dev/Fsp-Scraper/FspScraper.Scraper/FspScraper.Scraper.csproj"
             }
           }
         }

@@ -8,7 +8,7 @@ namespace FspScraper.Common
         public const string FSP_AIRCRAFT_URL = "https://app.flightschedulepro.com/App/Aircraft/";
         // TODO: implement streamreading of credentials or some other method
         public const string CREDENTIALS_DIR = "~/Documents/Dotnet/cred.txt";
-        public const string FSP_LOGIN_USER = "";
-        public const string FSP_LOGIN_PASS = "";
+        public const string FSP_LOGIN_USER = "dustincotten@gmail.com";
+        public const string FSP_LOGIN_PASS = "pedobear";
     }
 }
