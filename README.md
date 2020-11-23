@@ -1,7 +1,8 @@
 # Explanation
 Our company has a fleet of aircraft that is tracked by an online service. The service does not have a public API for customers to call on their own.
-My company needed accurate time information for automated maintenance document software and logbook tracking. This is a work-around where the times are manually scraped
-off the website and stored into a DB. This is set as an hourly job via Hangfire. As an extra, it is served via a very simple web API. 
+My company needed accurate time information for automated maintenance document software and logbook tracking.
+
+Using Selenium, aircraft times are scraped off of the website and stored into a database using EF Core. The scraper is scheduled as an hourly job in Hangfire with a one-time job also set on startup. A very simple web API is also in place to serve the aircraft information.
 # Setup
 #### Software
 A valid version of chromedriver on PATH that is valid with your current installed version of Chrome is necessary as the scraping is done via Chromedriver.
