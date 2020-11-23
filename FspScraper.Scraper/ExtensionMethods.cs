@@ -1,15 +1,7 @@
-using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Reflection.Emit;
 using System.Linq;
 using System.Collections.Generic;
-using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using FspScraper.Common;
 using OpenQA.Selenium.Support.UI;
-using FspScraper.Common.Models;
-using SeleniumExtras.WaitHelpers;
 
 namespace FspScraper.Scraper
 {

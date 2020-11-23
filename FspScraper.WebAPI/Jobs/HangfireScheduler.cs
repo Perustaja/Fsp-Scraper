@@ -10,8 +10,8 @@ namespace FspScraper.WebAPI.Jobs
             // TimesScraperJob - set for hourly
             RecurringJob.RemoveIfExists(nameof(TimesScraperJob));
             RecurringJob.AddOrUpdate<TimesScraperJob>(nameof(TimesScraperJob),
-            job => job.Run(JobCancellationToken.Null),
-            Cron.Hourly, TimeZoneInfo.Local);
+                job => job.Run(JobCancellationToken.Null),
+                Cron.Hourly, TimeZoneInfo.Local);
         }
     }
 }

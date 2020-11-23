@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FspScraper.Common.Interfaces;
 using FspScraper.Common.Models;
 using FspScraper.Common.Models.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -18,19 +19,10 @@ namespace FspScraper.WebAPI.Services
             _logger = logger;
         }
 
-        public async Task<FspTimes[]> GetTimes()
-        {
-            _logger.LogInformation($"Attempting to get times");
-            var times = _timesContext.Times;
-            return await times.ToArrayAsync();
-        }
+        public async Task<List<FspTimes>> GetTimes() => await _timesContext.Set<FspTimes>().ToListAsync();
 
-        public async Task<FspTimes> GetTimesByReg(string registrationNum)
-        {
-            _logger.LogInformation($"Attempting to get times for: {registrationNum}");
-            var times = _timesContext.Times.
-                            Where(a => a.RegistrationNum == registrationNum);
-            return await times.FirstOrDefaultAsync();
-        }
+        public async Task<FspTimes> GetTimesByReg(string registrationNum) 
+            => await _timesContext.Set<FspTimes>().Where(t => t.RegistrationNum.ToLower() == registrationNum.ToLower()).FirstOrDefaultAsync();
+
     }
 }

@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using FspScraper.Common.Interfaces;
 using FspScraper.Common.Models.Contexts;
-using FspScraper.Scraper;
 using Hangfire;
 using Microsoft.Extensions.Logging;
 
@@ -12,10 +12,12 @@ namespace FspScraper.WebAPI.Jobs
     {
         private readonly ILogger _logger;
         private readonly FspTimesContext _timesContext;
-        public TimesScraperJob(FspTimesContext context, ILogger<TimesScraperJob> logger)
+        private readonly ITimesScraper _scraper;
+        public TimesScraperJob(ILogger<TimesScraperJob> logger, FspTimesContext context, ITimesScraper scraper)
         {
-            _timesContext = context;
-            _logger = logger;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));;
+            _timesContext = context ?? throw new ArgumentNullException(nameof(context));;
+            _scraper = scraper ?? throw new ArgumentNullException(nameof(scraper));
         }
         public async Task Run(IJobCancellationToken token)
         {
@@ -25,8 +27,7 @@ namespace FspScraper.WebAPI.Jobs
         public async Task UpdateTimes()
         {
             _logger.LogInformation($"{DateTime.Now}: Attempting to start scraping background service.");
-            var scraper = new FspTimesScraper();
-            var times = scraper.Run();
+            var times = _scraper.Run();
             foreach (var set in times)
             {
                 if (_timesContext.Times.Any(e => e.RegistrationNum == set.RegistrationNum))

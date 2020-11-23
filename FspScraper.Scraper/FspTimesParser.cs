@@ -1,17 +1,13 @@
 using System.Linq;
 using System.Collections.Generic;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using FspScraper.Common;
-using OpenQA.Selenium.Support.UI;
-using System;
 using FspScraper.Common.Models;
+using FspScraper.Common.Interfaces;
 
 namespace FspScraper.Scraper
 {
-    public class FspTimesParser
+    public class FspTimesParser : ITimesParser
     {
-        public static FspTimes ParseTimes(List<string> labels, List<string> values)
+        public FspTimes ParseTimes(List<string> labels, List<string> values)
         {
             var dict = new Dictionary<string, decimal>();
             // starts at 1 to avoid parsing the N number
