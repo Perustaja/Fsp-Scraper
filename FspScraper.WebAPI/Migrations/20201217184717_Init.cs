@@ -13,14 +13,10 @@ namespace FspScraper.WebAPI.Migrations
                     RegistrationNum = table.Column<string>(nullable: false),
                     Hobbs = table.Column<decimal>(nullable: true),
                     AirTime = table.Column<int>(nullable: true),
-                    Tach1 = table.Column<decimal>(nullable: true),
-                    Tach2 = table.Column<decimal>(nullable: true),
-                    Prop1 = table.Column<decimal>(nullable: true),
-                    Prop2 = table.Column<decimal>(nullable: true),
-                    AircraftTotal = table.Column<decimal>(nullable: false),
+                    Prop1Total = table.Column<decimal>(nullable: true),
+                    Prop2Total = table.Column<decimal>(nullable: true),
                     Engine1Total = table.Column<decimal>(nullable: true),
-                    Engine2Total = table.Column<decimal>(nullable: true),
-                    Cycles = table.Column<int>(nullable: true)
+                    Engine2Total = table.Column<decimal>(nullable: true)
                 },
                 constraints: table =>
                 {

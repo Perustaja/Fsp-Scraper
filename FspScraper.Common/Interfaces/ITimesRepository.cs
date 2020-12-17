@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using FspScraper.Common.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace FspScraper.Common.Interfaces
 {
