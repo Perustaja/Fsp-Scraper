@@ -7,11 +7,15 @@ Using Selenium, aircraft times are scraped off of the website and stored into a 
 #### Software
 A valid version of chromedriver on PATH that is valid with your current installed version of Chrome is necessary as the scraping is done via Chromedriver.
 #### Database
-Migrations are committed to the repository. Sqlite databases will be generated on launch. 
+Migrations are committed to the repository. To create a local SQLite database:
+```
+$ cd FspScraper.WebApi
+$ dotnet ef database update
+```
 #### Login Configuration
 Login configuration is stored in user secrets and injected via the IOptions<TOptions> interface.
 ```
-cd FspScraper.WebAPI
-dotnet user-secrets set "Login:FspUser" "<your_username>"
-dotnet user-secrets set "Email:FspPass" "<your_key>"
+$ cd FspScraper.WebAPI
+$ dotnet user-secrets set "Login:FspUser" "<your_email>"
+$ dotnet user-secrets set "Login:FspPass" "<your_pass>"
 ```

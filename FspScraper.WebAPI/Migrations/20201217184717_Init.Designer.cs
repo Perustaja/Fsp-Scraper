@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FspScraper.WebAPI.Migrations
 {
     [DbContext(typeof(FspTimesContext))]
-    [Migration("20190911163405_Init")]
+    [Migration("20201217184717_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,23 +25,15 @@ namespace FspScraper.WebAPI.Migrations
 
                     b.Property<int?>("AirTime");
 
-                    b.Property<decimal>("AircraftTotal");
-
-                    b.Property<int?>("Cycles");
-
                     b.Property<decimal?>("Engine1Total");
 
                     b.Property<decimal?>("Engine2Total");
 
                     b.Property<decimal?>("Hobbs");
 
-                    b.Property<decimal?>("Prop1");
+                    b.Property<decimal?>("Prop1Total");
 
-                    b.Property<decimal?>("Prop2");
-
-                    b.Property<decimal?>("Tach1");
-
-                    b.Property<decimal?>("Tach2");
+                    b.Property<decimal?>("Prop2Total");
 
                     b.HasKey("RegistrationNum");
 
